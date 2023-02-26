@@ -53,21 +53,39 @@ function App() {
   } else if (colAmt == 2) {
     return (
       <div className="App">
-        <header className="App-header">
-          Applying a transformation in {colAmt} dimensions.
+        <header >
 
-          <br />
-          <br />
-          Please input your transformation values:
-          <InputBox setReadyToTransform={setReadyToTransform} r0c0={r0c0} setR0C0={setR0C0} r0c1={r0c1} setR0C1={setR0C1} r1c0={r1c0} setR1C0={setR1C0} r1c1={r1c1} setR1C1={setR1C1} />
-
-          <br />
-          {
-            startAnimation
-              ? <h2>Animation is starting</h2>
-              : null
-          }
         </header >
+
+
+        <body >
+          <div class="flex-container">
+
+            <div className='App-header'>
+              Applying a transformation in {colAmt} dimensions.
+
+              <br />
+              <br />
+              Please input your transformation values:
+              <InputBox setReadyToTransform={setReadyToTransform} r0c0={r0c0} setR0C0={setR0C0} r0c1={r0c1} setR0C1={setR0C1} r1c0={r1c0} setR1C0={setR1C0} r1c1={r1c1} setR1C1={setR1C1} />
+
+              <br />
+              {
+                startAnimation
+                  ? <h2>Animation is starting</h2>
+                  : null
+              }
+            </div>
+
+            <div className="mockSquare">
+              <p1>
+                The graph will go here.
+              </p1>
+            </div>
+          </div>
+
+
+        </body>
       </div >
     );
 
