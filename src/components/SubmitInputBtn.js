@@ -1,7 +1,10 @@
 import React from 'react'
 
+/**
+ * Takes the state readyToTransform from App.js
+ * and turns it true when this button clicked.
+ */
 function SubmitInputBtn({ setReadyToTransform }) {
-
 
     const handleSubmit = (event) => {
         setReadyToTransform(true)

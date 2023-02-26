@@ -15,7 +15,7 @@ function App() {
   const [r1c0, setR1C0] = useState(NaN)
   const [r1c1, setR1C1] = useState(NaN)
 
-  // mock animation occurs
+  // Simulate passing the 4 values to the GRID and Performs the animation 
   const [startAnimation, setStartAnimation] = useState(false)
 
   const handleDimensions = (event) => {
@@ -54,14 +54,12 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-          There are {colAmt} columns.
+          Applying a transformation in {colAmt} dimensions.
 
           <br />
           <br />
           Please input your transformation values:
           <InputBox setReadyToTransform={setReadyToTransform} r0c0={r0c0} setR0C0={setR0C0} r0c1={r0c1} setR0C1={setR0C1} r1c0={r1c0} setR1C0={setR1C0} r1c1={r1c1} setR1C1={setR1C1} />
-
-          {/* <InputBox setReadyToTransform={setReadyToTransform} /> */}
 
           <br />
           {
