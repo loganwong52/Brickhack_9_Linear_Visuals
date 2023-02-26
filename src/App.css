@@ -3,13 +3,13 @@
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #282c34;
+  background-color: #9B3052;
 }
 
 .titleDiv {
   text-align: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FB9AC3;
 }
 
 .flex-container {
@@ -17,7 +17,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   max-width: 33%;
   display: flex;
@@ -29,7 +28,7 @@
 }
 
 .mockSquare {
-  background-color: red;
+  background-color: #FB9AC3;
   min-height: 100vh;
   width: 66%;
   display: flex;
@@ -37,5 +36,5 @@
   align-items: right;
   justify-content: right;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
