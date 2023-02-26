@@ -2,25 +2,39 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react'
 import InputBox from './components/InputBox'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 function App() {
   // states
   const [colAmt, setColAmt] = useState(2)  // initial value should start as 0
+  const [readyToTransform, setReadyToTransform] = useState(false)
 
+  // The 2x2 transformation matrix
+  const [r0c0, setR0C0] = useState(NaN)
+  const [r0c1, setR0C1] = useState(NaN)
+  const [r1c0, setR1C0] = useState(NaN)
+  const [r1c1, setR1C1] = useState(NaN)
 
-
-  // const [rowAmt, setRowAmt] = useState(0)
-  // const handleRowInput = (event) => {
-  //   setRowAmt(event.target.value)
-  //   console.log("event.target.value: ", event.target.value)
-  // }
+  // mock animation occurs
+  const [startAnimation, setStartAnimation] = useState(false)
 
   const handleDimensions = (event) => {
     setColAmt(event.target.value)
   }
 
-  if (colAmt <= 1) {
+  useEffect(() => {
+    // readyToTransform becomes true when you click the SubmitInputBtn
+    // Perhaps you'll want to send the 4 state values to the chart.js graph
+    if (readyToTransform) {
+      console.log(`Ready to transform: r0c0: ${r0c0},  r0c1: ${r0c1}, r1c0: ${r1c0}, r1c1: ${r1c1}`)
+      setStartAnimation(true)
+    } else {
+      console.log("Not Ready to transform")
+      setStartAnimation(false)
+    }
+  }, [readyToTransform])
+
+  if (colAmt <= 1 || colAmt >= 3) {
     return (
       <div className="App">
         <header className="App-header">
@@ -36,7 +50,7 @@ function App() {
       </div>
     );
 
-  } else {
+  } else if (colAmt == 2) {
     return (
       <div className="App">
         <header className="App-header">
@@ -45,8 +59,16 @@ function App() {
           <br />
           <br />
           Please input your transformation values:
-          {/* <InputBox setR0C0={setR0C0} setR0C1={setR0C1} setR1C0={setR1C0} setR1C1={setR1C1} /> */}
-          <InputBox />
+          <InputBox setReadyToTransform={setReadyToTransform} r0c0={r0c0} setR0C0={setR0C0} r0c1={r0c1} setR0C1={setR0C1} r1c0={r1c0} setR1C0={setR1C0} r1c1={r1c1} setR1C1={setR1C1} />
+
+          {/* <InputBox setReadyToTransform={setReadyToTransform} /> */}
+
+          <br />
+          {
+            startAnimation
+              ? <h2>Animation is starting</h2>
+              : null
+          }
         </header >
       </div >
     );

@@ -4,13 +4,8 @@ import SubmitInputBtn from './SubmitInputBtn'
 
 // For now, User Input is always assumed to be a 2x2 matrix.
 
-function InputBox() {
+function InputBox({ setReadyToTransform, r0c0, setR0C0, r0c1, setR0C1, r1c0, setR1C0, r1c1, setR1C1 }) {
     const inputBoxSize = "80px"
-    const [r0c0, setR0C0] = useState(NaN)
-    const [r0c1, setR0C1] = useState(NaN)
-    const [r1c0, setR1C0] = useState(NaN)
-    const [r1c1, setR1C1] = useState(NaN)
-
     const [disableSubmitBtn, setDisableSubmitBtn] = useState(true)
 
     useEffect(() => {
@@ -26,9 +21,8 @@ function InputBox() {
     const helper = (event) => {
         // console.log("event: ", event.target.value, "   eventType: ", typeof event.target.value)
         // console.log("Length: ", event.target.value.length)
-
         let input = Number(event.target.value)
-        console.log("INPUT: ", input, "   TYPE: ", typeof input)
+        // console.log("INPUT: ", input, "   TYPE: ", typeof input)
 
         if (event.target.value.length === 0) {
             input = NaN
@@ -105,8 +99,8 @@ function InputBox() {
             <br />
             {
                 disableSubmitBtn
-                    ? null
-                    : <SubmitInputBtn r0c0={r0c0} r0c1={r0c1} r1c0={r1c0} r1c1={r1c1} />
+                    ? setReadyToTransform(false)
+                    : <SubmitInputBtn setReadyToTransform={setReadyToTransform} />
             }
 
         </div >
