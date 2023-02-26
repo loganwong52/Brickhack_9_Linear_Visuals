@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  text-align: left;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -13,13 +17,30 @@
   }
 }
 
+.flex-container {
+  display: flex;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  max-width: 33%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.mockSquare {
+  background-color: red;
+  min-height: 100vh;
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -32,6 +53,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
