@@ -19,7 +19,7 @@ Starting off was difficult due to it being a challenge to create and use our Git
 3) Incorporating the graph into the web app.
 4) Using the user input and applying it to be a transformation in the graph.
 5) Animating the vectors in the graph to show the transformation.
-6) Turn ing our Figma UI into React Code. 
+6) Turning our Figma UI into React Code. 
 
 ## What we learned
 1) To work in an impromptu team for a limited amount of time.
