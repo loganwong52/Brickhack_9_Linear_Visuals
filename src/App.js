@@ -22,12 +22,14 @@ function App() {
     setColAmt(event.target.value)
   }
 
+  // CONTROLS when to "SEND" the 4 values to the GRID
   useEffect(() => {
     // readyToTransform becomes true when you click the SubmitInputBtn
     // Perhaps you'll want to send the 4 state values to the chart.js graph
     if (readyToTransform) {
       console.log(`Ready to transform: r0c0: ${r0c0},  r0c1: ${r0c1}, r1c0: ${r1c0}, r1c1: ${r1c1}`)
       setStartAnimation(true)
+      // Potentially send the 4 values to the GRID
     } else {
       console.log("Not Ready to transform")
       setStartAnimation(false)
@@ -54,6 +56,11 @@ function App() {
     return (
       <div className="App">
         <header >
+          <div class="titleDiv">
+            <p1>
+              APP NAME goes here.
+            </p1>
+          </div>
 
         </header >
 
@@ -72,9 +79,16 @@ function App() {
               <br />
               {
                 startAnimation
-                  ? <h2>Animation is starting</h2>
-                  : null
+                  ? <h2>Animation is now starting</h2>
+                  : <h2>Static 'image' of graph is viewable</h2>
               }
+              {/* 
+                The grid would be a custom React component.
+                The grid custom component should take in the startAnimation boolean.
+                And the 4 values.
+                If startAnimation is false then the grid custom React component will return aka render to the default positions
+                But if startAnimation is true, then the grid will do math to update the point values
+              */}
             </div>
 
             <div className="mockSquare">
