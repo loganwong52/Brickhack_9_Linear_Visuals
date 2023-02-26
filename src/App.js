@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 
 function App() {
   // states
-  const [colAmt, setColAmt] = useState(2)  // initial value should start as 0
+  const [colAmt, setColAmt] = useState(0)  // initial value should start as 0
   const [readyToTransform, setReadyToTransform] = useState(false)
 
   // The 2x2 transformation matrix
@@ -58,7 +58,7 @@ function App() {
         <header >
           <div class="titleDiv">
             <h1>
-              Linear Visualizer
+              Linear Algebra Transformations Visualizer
             </h1>
           </div>
 
