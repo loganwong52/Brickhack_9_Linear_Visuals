@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-  padding-top: 5%;
+  padding-top: 1%;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #9B3052;
@@ -28,13 +28,16 @@
 }
 
 .mockSquare {
-  background-color: #FB9AC3;
-  min-height: 100vh;
-  width: 66%;
+  background-color: white;
+  width: 750px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   align-items: right;
   justify-content: right;
   font-size: calc(10px + 2vmin);
   color: black;
+  position: relative;
+  margin-left:10%;
+  background-image: url('../media/background.png');
 }

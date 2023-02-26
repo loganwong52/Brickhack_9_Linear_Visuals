@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react'
 import InputBox from './components/InputBox'
 import { useState, useEffect } from "react"
+import VectorGraph from './components/VectorGraph';
 
 function App() {
   // states
@@ -56,7 +57,7 @@ function App() {
     return (
       <div className="App">
         <header >
-          <div class="titleDiv">
+          <div className="titleDiv">
             <h1>
               Linear Algebra Transformations Visualizer
             </h1>
@@ -66,7 +67,7 @@ function App() {
 
 
         <body >
-          <div class="flex-container">
+          <div className="flex-container">
 
             <div className='App-header'>
               Applying a transformation in {colAmt} dimensions.
@@ -79,11 +80,7 @@ function App() {
             </div>
 
             <div className="mockSquare">
-              {
-                startAnimation
-                  ? <h2>Animation is now starting</h2>
-                  : <h2>Static 'image' of graph is viewable</h2>
-              }
+              <VectorGraph startAnimation={startAnimation} setStartAnimation={setStartAnimation} r0c0={r0c0} r0c1={r0c1} r1c0={r1c0} r1c1={r1c1}/>
 
               {/* 
                 The grid would be a custom React component.
@@ -94,8 +91,6 @@ function App() {
               */}
             </div>
           </div>
-
-
         </body>
       </div >
     );
