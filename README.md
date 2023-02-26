@@ -1,5 +1,5 @@
-#Linear Algebra Visualizer
 ![Linear Algebra Visualizer](https://user-images.githubusercontent.com/89428635/221396365-dee296fc-1e76-4c0c-8ec0-3a6107227edd.gif)
+# Linear Algebra Visualizer
 
 ## Inspiration
 Linear Algebra is hard to understand. Our web app will make it easier to understand.
