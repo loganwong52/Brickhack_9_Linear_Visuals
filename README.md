@@ -2,37 +2,32 @@
 # Linear Algebra Visualizer
 
 ## Inspiration
-Linear Algebra is hard to understand. Our web app will make it easier to understand.
+Linear Algebra is difficult due to the lack of visualization of determinants and eigenvectors. We created Linear Visuals to allow users to be able to graph matrices, matrix transformations, and matrix projections. 
 
 ## What it does
-It shows a graph of all possible vectors on a graph.
-It takes in a 2x2 transformation matrix.
-It applies this transformation on all the vectors on the graph. 
-The transformation for every graph is shown in an animation.
+It shows a graph of all possible vectors on a graph. Then, the users enter a 2x2 transformation matrix.  The graph applies the transformation to all the vectors on the graph. The action of the transformation is demonstrated through an animated motion. 
 
 ## How we built it
-We used Figma, React (a JavaScript framework), HTML, and CSS.
-Link to Figma prototype: https://www.figma.com/proto/rvUfwG4gtNpAbGqUWlXXTk/Linear-Algebra-Visualizer?node-id=11%3A477&scaling=scale-down&page-id=0%3A1&starting-point-node-id=11%3A475 
+Linear Visuals, our website, was designed through Figma, and coding through React (a JavaScript framework), HTML, and CSS. Link to Figma prototype: https://www.figma.com/proto/rvUfwG4gtNpAbGqUWlXXTk/Linear-Algebra-Visualizer?node-id=11%3A477&scaling=scale-down&page-id=0%3A1&starting-point-node-id=11%3A475 
 
 ## Challenges we ran into
-Creating and using our GitHub repo.
-Learning how to use chart.js
-Using React.
-Using CSS to make our web app look the way we want it.
+Starting off was difficult due to it being a challenge to create and use our GitHub Repo.  Then, we struggled to learn how to use chart.js which was a main component of our website. In addition, our team was learning how to use React (a JavaScript framework).  CSS was a struggle because we could not make LinearVisuals the way we initially wanted. 
 
 ## Accomplishments that we're proud of
-Getting and using user input.
-Creating a graph with points and vectors using chart.js.
-Incorporating the graph into the web app.
-Using the user input and applying it to be a transformation in the graph.
-Animating the vectors in the graph to show the transformation.
+1) Being able to get and use user input. 
+2) Creating a graph with points and vectors using charts.js. 
+3) Incorporating the graph into the web app.
+4) Using the user input and applying it to be a transformation in the graph.
+5) Animating the vectors in the graph to show the transformation.
+6) Turn ing our Figma UI into React Code. 
 
 ## What we learned
-Working in an impromptu team for a limited amount of time.
-How to use chart.js.
+1) To work in an impromptu team for a limited amount of time.
+2) How to use chart.js.
+3) Turning Figma UI into React Code using a ui.pkg. 
 
 ## What's next for Linear Algebra Transformations Visualizer
-Ultimately, it should also show animations for 2D and 3D transformations to all vectors on a graph, but we only had time to apply a 2D animation.
+Once the website is finalized, we want to potentially license it to textbook manufacturers. Textbook manufacturers would reach our target market of linear algebra college students and allow us to make a profit. Long-term, we want Linear Visuals to have an animation for the transformations not only in 2D but 3D as well for all the vectors on the graph. 
 
 
 # Getting Started with Create React App
