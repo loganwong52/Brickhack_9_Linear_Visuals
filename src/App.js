@@ -57,9 +57,9 @@ function App() {
       <div className="App">
         <header >
           <div class="titleDiv">
-            <p1>
-              APP NAME goes here.
-            </p1>
+            <h1>
+              Linear Visualizer
+            </h1>
           </div>
 
         </header >
