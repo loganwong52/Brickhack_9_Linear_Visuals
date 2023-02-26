@@ -76,12 +76,15 @@ function App() {
               Please input your transformation values:
               <InputBox setReadyToTransform={setReadyToTransform} r0c0={r0c0} setR0C0={setR0C0} r0c1={r0c1} setR0C1={setR0C1} r1c0={r1c0} setR1C0={setR1C0} r1c1={r1c1} setR1C1={setR1C1} />
 
-              <br />
+            </div>
+
+            <div className="mockSquare">
               {
                 startAnimation
                   ? <h2>Animation is now starting</h2>
                   : <h2>Static 'image' of graph is viewable</h2>
               }
+
               {/* 
                 The grid would be a custom React component.
                 The grid custom component should take in the startAnimation boolean.
@@ -89,12 +92,6 @@ function App() {
                 If startAnimation is false then the grid custom React component will return aka render to the default positions
                 But if startAnimation is true, then the grid will do math to update the point values
               */}
-            </div>
-
-            <div className="mockSquare">
-              <p1>
-                The graph will go here.
-              </p1>
             </div>
           </div>
 
