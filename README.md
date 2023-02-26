@@ -1,3 +1,40 @@
+![Linear Algebra Visualizer](https://user-images.githubusercontent.com/89428635/221396365-dee296fc-1e76-4c0c-8ec0-3a6107227edd.gif)
+# Linear Algebra Visualizer
+
+## Inspiration
+Linear Algebra is hard to understand. Our web app will make it easier to understand.
+
+## What it does
+It shows a graph of all possible vectors on a graph.
+It takes in a 2x2 transformation matrix.
+It applies this transformation on all the vectors on the graph. 
+The transformation for every graph is shown in an animation.
+
+## How we built it
+We used Figma, React (a JavaScript framework), HTML, and CSS.
+Link to Figma prototype: https://www.figma.com/proto/rvUfwG4gtNpAbGqUWlXXTk/Linear-Algebra-Visualizer?node-id=11%3A477&scaling=scale-down&page-id=0%3A1&starting-point-node-id=11%3A475 
+
+## Challenges we ran into
+Creating and using our GitHub repo.
+Learning how to use chart.js
+Using React.
+Using CSS to make our web app look the way we want it.
+
+## Accomplishments that we're proud of
+Getting and using user input.
+Creating a graph with points and vectors using chart.js.
+Incorporating the graph into the web app.
+Using the user input and applying it to be a transformation in the graph.
+Animating the vectors in the graph to show the transformation.
+
+## What we learned
+Working in an impromptu team for a limited amount of time.
+How to use chart.js.
+
+## What's next for Linear Algebra Transformations Visualizer
+Ultimately, it should also show animations for 2D and 3D transformations to all vectors on a graph, but we only had time to apply a 2D animation.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
